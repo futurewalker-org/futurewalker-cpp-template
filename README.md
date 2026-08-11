@@ -1,6 +1,6 @@
 # futurewalker-cpp-template
 
-A minimal application project template using Futurewalker.  
+A minimal C++ application project template using [Futurewalker](https://github.com/futurewalker-org/futurewalker).  
 You can copy this repository and start developing your own application.  
 
 ## How to build the project
