@@ -1,0 +1,9 @@
+name: windows
+run-name: windows
+on: [push]
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    with:
+      runs-on: windows-latest
+      profile: ./profile/windows_x86_64_Debug.profile

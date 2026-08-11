@@ -23,7 +23,7 @@ Add custom recipe for Skia as [Local Recipe Index Repository](https://docs.conan
 
 ```bash
 git clone https://github.com/mocabe/conan-skia
-conan remote add conan_skia ./conan_skia
+conan remote add conan_skia ./conan-skia
 ```
 
 ### Building
@@ -36,9 +36,9 @@ It also generates `CMakeUserPresets.json`, which can be used to populate CMake a
 
 ```bash
 # For Windows:
-conan install -pr:h=./profile/windows_x86_64_Debug.profile
+conan install -pr:h=./profile/windows_x86_64_Debug.profile --build=missing
 # For macOS:
-conan install -pr:h=./profile/macOS_armv8_Debug.profile
+conan install -pr:h=./profile/macOS_armv8_Debug.profile --build=missing
 ```
 
 #### Configure with CMake (first time only)
