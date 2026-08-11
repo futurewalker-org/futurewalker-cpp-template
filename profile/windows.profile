@@ -6,4 +6,4 @@ compiler.runtime=dynamic
 compiler.cppstd=23
 
 [conf]
-tools.microsoft:winsdk_version=10.0.22621.0
+tools.microsoft:winsdk_version=10.0.26100.0
