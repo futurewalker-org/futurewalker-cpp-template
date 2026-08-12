@@ -44,7 +44,10 @@ conan install -pr:h=./profile/macOS_armv8_Debug.profile --build=missing
 #### Configure with CMake (first time only)
 
 ```bash
-cmake --preset conan-default  
+# For Windows:
+cmake --preset conan-default
+# For macOS:
+cmake --preset conan-debug
 ```
 
 #### Build with CMake

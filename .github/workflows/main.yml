@@ -9,6 +9,12 @@ on:
       profile:
         required: true
         type: string
+      preset-configure:
+        required: true
+        type: string
+      preset-build:
+        required: true
+        type: string
 jobs:
   build-main:
     runs-on: ${{ inputs.runs-on }}
@@ -30,6 +36,6 @@ jobs:
       - name: Install dependencies
         run:  conan install -pr:b=default -pr:h=${{ inputs.profile }} --build=missing
       - name: Configure
-        run: cmake --preset conan-default
+        run: cmake --preset ${{ inputs.preset-configure }}
       - name: Build
-        run: cmake --build --preset conan-debug
+        run: cmake --build --preset ${{ inputs.preset-build }}

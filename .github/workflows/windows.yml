@@ -7,3 +7,5 @@ jobs:
     with:
       runs-on: windows-latest
       profile: ./profile/windows_x86_64_Debug.profile
+      preset-configure: conan-default
+      preset-build: conan-debug

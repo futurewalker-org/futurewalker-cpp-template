@@ -7,3 +7,5 @@ jobs:
     with:
       runs-on: macos-latest
       profile: ./profile/macOS_armv8_Debug.profile
+      preset-configure: conan-debug
+      preset-build: conan-debug
