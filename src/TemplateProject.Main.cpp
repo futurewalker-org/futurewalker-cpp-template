@@ -12,7 +12,7 @@ auto Main() -> Async<ExitCode>
     {
         auto env = Environment();
         auto app = TemplateProject::Application::Make();
-        co_await app->Run();
+        co_await Application::Run(std::move(app));
     }
     catch (...)
     {
